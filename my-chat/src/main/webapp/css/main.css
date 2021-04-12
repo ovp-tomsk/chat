@@ -1,0 +1,355 @@
+html,body
+{
+    width:  100%;
+    height: 100%;
+    margin:  0px;
+    padding: 0px;
+
+    font-family: Helvetica, Arial, sans-serif;
+    font-size:   14px;
+    background-color: #ffffff;
+}
+
+table
+{
+    border-collapse: collapse;
+    border-spacing: 0;
+    background: #fcfcfc;    
+}
+
+th, td 
+{
+    padding: 2px 8px;
+    display: table-cell;
+    border: 1px solid #A0CADA;    
+}
+
+.narrow {width:24px;}
+.middle {width:90px;}
+.wide   {width:200px;}
+
+th {background: #D3E3E9;}
+td {overflow-x: hidden; text-overflow: ellipsis; white-space: nowrap;}
+
+#topBar
+{
+    background-color: #2495bf;
+
+    width: 100%;
+    min-width: 900px;
+    height: 70px;
+    font-size: 24px;    
+    color: white;
+
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+
+    position: absolute;    
+}
+
+#topBar div {padding: 20px 60px 0 300px; min-width: 850px;}
+
+.hidden-div {display: none;}
+/*********************************************************************************************************************/
+.mess-info   {padding: 0 64px 32px 64px ;}
+.mess-info p {}
+/*********************************************************************************************************************/
+/*********************************************************************************************************************/
+#leftPanelIndex
+{
+    padding-top: 100px;
+
+    display: inline-block;
+    width: 400px;
+    height: 110%;
+    background-color: rgba(36, 149, 191, 0.75);
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+#leftPanel
+{
+    padding-top: 100px;
+
+    display: inline-block;
+    width: 300px;
+    height: 110%;
+    background-color: rgba(36, 149, 191, 0.75);
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+#leftMenu
+{
+    display: inline-block;
+    width: 100%;
+    font-family: Verdana, Lucida, Geneva, Helvetica, Arial, sans-serif;
+}
+
+#leftMenu-container
+{
+    list-style: none;
+    margin: 40px 0 0 0;
+    padding: 16px 32px 0 32px;
+    border: none;
+}
+
+#leftMenu ul li
+{
+    margin: 0;
+    height: 28px;
+    line-height: 2.0;
+
+    border-bottom: 1px solid #90bade;
+}
+
+.li-left          {padding-left: 24px;}
+.li-left.selected {background: url(../img/light-on-green.png) no-repeat;}
+
+
+.li-left a
+{
+    display: inline-block;
+    text-decoration: none;
+    color:#ffffff;    
+}
+
+.li-left a:hover
+{
+    text-decoration: underline;
+    color: #66ff55;    
+}
+/*********************************************************************************************************************/
+#rightPanelIndex
+{
+    position: absolute;
+    display: inline-block;
+    
+    left: 440px;
+    top: 100px;
+    
+    vertical-align: top;
+    width: 700px;
+    min-height: 100%;
+}
+
+#rightPanel
+{
+    position: absolute;
+    display: inline-block;
+    
+    left: 340px;
+    top: 100px;
+    
+    vertical-align: top;
+    width: 900px;
+    min-height: 100%;
+}
+#welcome-block {position: absolute; left: 300px;}
+
+.result
+{
+    margin: 16px;
+    padding: 6px 16px;
+    border:  1px solid #d0d0d0;    
+}
+
+h1, h2, h3
+{
+    text-align: center;
+    color:#2495BF;
+}
+/*********************************************************************************************************************/
+#workPanel
+{
+    position: relative;
+    /*top: 100px;*/
+    /*border:  1px solid #d0d0d0;*/
+}
+/*********************************************************************************************************************/
+.brush
+{
+    position: relative;
+    top: 6px;
+    left: 6px;    
+    width: 24px;
+    height: 24px;
+    background: url(../img/clean.png) center center no-repeat;        
+}
+
+.btn,
+.btn-waiting,
+.btn-finish-success,
+.btn-finish-failed
+{
+    display: inline-block;
+    width: 200px;
+    height: 28px;
+    font-size: 14px;
+    margin: 3px 0 8px 0;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 28px;
+}
+
+.btn:hover {text-decoration: underline;}
+.btn
+{
+    border: 1px solid #d0d0d0;
+    box-shadow: 1px 1px 2px rgba(0,0,0,0.4);
+    background: linear-gradient(to top, #45B1D9 20%, #57B0D1 50%, #2495bf 85%);
+    border-radius: 11px;
+    color: #ffffff;    
+}
+.btn:active
+{
+    background: linear-gradient(to top, #2495bf, #45B1D9);
+}
+.btn-waiting
+{
+    border: none;
+    box-shadow: none;
+    background: none;
+}
+.btn-finish-success
+{
+    border: 1px solid #d05050;
+    background: linear-gradient(to top, #51CD42 20%, #77E76A 50%, #61CF54 85%);
+
+}
+.btn-finish-failed
+{
+    border: 1px solid #d05050;
+    background: red;
+    color: #ffffff;
+    font-weight: bold;
+}
+/******************************************************************************************************************/
+form table {width: 100%; background: transparent; }
+                    
+#container-formSaveFullRecord
+{
+    margin: 12px 0;
+    padding: 0 0 0 0;    
+}
+
+.sea        {background-color: #f2fbfd;}
+.melancholy {background-color: #fafafa;}
+.spring     {background-color: #ebf2e8;}
+
+#container-formSave
+{
+    width: 100%;
+        
+    position: relative;    
+    margin: 12px 0;    
+    border: 1px solid #d0d0d0;    
+}
+
+#response-msg {min-height: 16px;}
+
+
+#container-searchPanel,
+#container-bottomTable  {position: relative; margin: 12px 0;}
+
+#container-searchPanel {margin: 0;}
+
+#container-searchPanel
+{
+    padding: 12px;
+    border: 1px solid #eeeeee;
+    width: 898px;
+    box-sizing: border-box;
+}
+
+.cross-close-btn
+{
+	position:absolute;
+        right: 0px;
+        
+	width: 14px; height: 14px; line-height: 14px;
+	color: #890B0B;
+	font-size: 22px;
+	cursor: pointer;
+	padding:1px 0 0 2px;
+	border: 1px solid rgba(0,0,0,0);
+}
+/******************************************************************************************************************/
+input {padding-left: 4px; border: 1px solid #B9C8D5;}
+
+.selector-up
+{
+    background: url(../img/arr-up.png) left center no-repeat;
+    text-indent: 24px;
+    width: 620px;
+    color: #b0b0b0;
+    margin-left: 6px;
+    height: 20px;
+}
+.selector-down
+{
+    background: url(../img/arr-down.png) left center no-repeat;
+    text-indent: 24px;
+    width: 620px;
+    color: #b0b0b0;
+    margin-left: 6px;
+    height: 20px;
+}
+
+/******************************************************************************************************************/
+#btn-waiting-panel {display:none; height: 70px;}
+#srv-msg-container {display:none; position: relative; border: 1px solid #f0f0f0; padding: 4px 24px; background-color: #fffffe;}
+/******************************************************************************************************************/
+.err-line-title  {display: inline-block; width: 150px;	color: blue;  text-indent: 0;}
+.msg-line-title  {display: inline-block; width: 150px;	color: green; text-indent: 0;}
+/******************************************************************************************************************/
+option div {display: none;}
+
+#sbmt_frm 
+{display: none;}
+/******************************************************************************************************************/
+#annotation
+{
+    font-size: 16px;
+    border: 1px solid #f0f0f0;
+    padding: 8px 28px 8px 18px;
+    width:922px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+#annotation.red {color:red;}
+/******************************************************************************************************************/
+.btn-small
+{
+    display: inline-block;
+    width: 80px;
+    height: 18px;
+    font-size: 12px;
+    margin: 3px 0 8px 0;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 18px;
+    
+    margin: 0 10px;
+
+    border: 1px solid #d0d0d0;
+    box-shadow: 1px 1px 2px rgba(0,0,0,0.4);    
+    background: linear-gradient(to top, #2495bf, #45B1D9);
+    color: #ffffff;
+}
+.btn-small:active
+{
+    background: linear-gradient(to top, #45B1D9 20%, #57B0D1 50%, #2495bf 85%);    
+}
+/******************************************************************************************************************/
+
+.cross-delete-btn
+{
+        display: inline-block;
+	position:absolute;
+	right:2px; top:0;
+	width: 14px; height: 14px; line-height: 14px;
+	color: #890B0B;
+	font-size: 22px;
+	cursor: pointer;
+	padding:1px 0 0 2px;
+	border: 1px solid rgba(0,0,0,0);
+}
+/******************************************************************************************************************/
